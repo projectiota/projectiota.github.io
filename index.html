@@ -40,55 +40,24 @@
         <p>All work is published on the project's <a href="https://github.com/projectiota">GitHub</a> site.</p>
         <p>Project Iota represents a collection of open-source, patent-free projects licensed under Apache v2.0 License:
             <ul>
+                <li><a href="https://github.com/projectiota/electrolink">Electrolink</a></li>
                 <li><a href="#electrolib">Electrolib</a></li>
-                <li><a href="#iotaplatform">Iota Platform</a></li>
-                <li><a href="#uiotaplatform">uIota Platform</a></li>
+                <li><a href="#iotaplatform">Iota HW Platform</a></li>
             </ul>
         </p>
-
-        <h2 id="electrolib">Electrolib</h2>
-        <p>
-        Electrolib is a userspace HAL library used by applications to interract with HW.
         
-        </br></br>It comes in two flavors:
-            <ul>
-                <li>Python (electrolib-py)</li>
-                <li>NodeJS (electrolib-js)</li>
-            </ul>
+        <h2>Electrolink</h2>
+        <p>Electrolink ia a protocol and SW system based on JSON RPC via MQTT or CBOR RPC via CoAP.</p>
+        
+        <h2>Electrolib</h2>
+        <p>Electrolib is high-level host-side library that gives models and abstractions for various
+         electrical devices, sensors and actuators. It uses Electrolink as the underlaying protocol.
+         Intel MRAA and UPM can be adopted for this purpose
         </p>
-
-        <h2 id="iotaplatform">Iota Platform</h2>
-        <p>
-            Iota Platform is a SW platform based Linux OS. This is comprised in most cases of U-Boot/Barebox bootloader, Buildroot, Linux Kernel drivers,
-            various configurations, OTA update mechnism and other platform stuff.
-
-            </br></br>Since all Iota Platforms are full-blown Linux computers, this means that it targets are more powerful boards with
-            bigger ammount of RAM and flash - as oposed to <a href="uiotaplatform">uIota Platform</a>.
-
-            </br></br>Iota Platform will support many boards, but we are currently eveluating:
-            <ul>
-                <li>Carambola 2</li>
-                <li>Raspbery Pi</li>
-                <li>CHIP</li>
-                <li>WRTNode2</li>
-            </ul>
-        </p>
-
-        <h2 id="uiotaplatform">uIota Platform</h2>
-        <p>
-            uIota Platform targets MCUs with very small ammount of RAM and flash memory.
-            The idea is to acheive connectivity, but keep power consumption as low as possible.
-
-            </br></br>uIota Platform should enable programming in:
-            <ul>
-                <li>C (via GCC and Makefiles)</li>
-                <li>Micropython</li>
-                <li>Espruino</li>
-                <li>IoT.js</li>
-            </ul>
-        </p>
+        
+        <h2>Iota HW Platform</h2>
+        <p>Iota HW Platform are set of BSP (Board Support Packages) for various popular SoCs and boards</p>
     </div>
-
   </div> <!-- container -->
 
 <!-- End Document
